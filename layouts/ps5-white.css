@@ -1,0 +1,305 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "ds5-symbols";
+  src: url("symbols.eot?39367925#iefix") format("embedded-opentype"), url("symbols.woff2?39367925") format("woff2"), url("symbols.woff?39367925") format("woff"), url("symbols.ttf?39367925") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^=icon-]:before, [class*=" icon-"]:before {
+  font-family: "ds5-symbols";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-ps5-square:before {
+  content: "\e800";
+} /* '' */
+.icon-ps5-triangle:before {
+  content: "\e801";
+} /* '' */
+.icon-ps5-circle:before {
+  content: "\e802";
+} /* '' */
+.icon-ps5-cross:before {
+  content: "\e803";
+} /* '' */
+.icon-down-dir:before {
+  content: "\e804";
+} /* '' */
+.icon-up-dir:before {
+  content: "\e805";
+} /* '' */
+.icon-left-dir:before {
+  content: "\e806";
+} /* '' */
+.icon-right-dir:before {
+  content: "\e807";
+} /* '' */
+.icon-create:before {
+  content: "\e809";
+} /* '' */
+.icon-options:before {
+  content: "\e80a";
+} /* '' */
+:root {
+  --face-button-text-color: #aaa;
+  --face-button-color: hsl(0, 0%, 98%);
+  --face-button-color-pressed: hsl(272, 46%, 42%);
+  --misc-button-font-color: #555;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.controller.ds4 {
+  background: var(--controller-img) center/750px 750px;
+  width: 750px;
+  height: 750px;
+  margin-left: 0;
+  margin-top: 0;
+}
+.controller.ds4 .button, .controller.ds4 .face, .controller.ds4 .stick, .controller.ds4 .bumper, .controller.ds4 .trigger-button {
+  mask: url(elements.svg);
+}
+.controller.ds4 .button, .controller.ds4 .face, .controller.ds4 .back, .controller.ds4 .start {
+  color: var(--face-button-text-color);
+  box-sizing: border-box;
+}
+.controller.ds4 .button:before, .controller.ds4 .face:before, .controller.ds4 .back:before, .controller.ds4 .start:before {
+  font-family: "ds5-symbols";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  /* font-size: 120%; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+.controller.ds4 .button.pressed, .controller.ds4 .face.pressed, .controller.ds4 .back.pressed, .controller.ds4 .start.pressed {
+  background: var(--face-button-color-pressed);
+}
+.controller.ds4 .abxy {
+  width: 147px;
+  height: 147px;
+  top: 200px;
+  left: 507px;
+}
+.controller.ds4 .sticks {
+  width: 322px;
+  top: 342px;
+  left: 219px;
+}
+.controller.ds4 .dpad {
+  top: 194px;
+  left: 90px;
+  width: 150px;
+  height: 152px;
+}
+.controller.ds4 .stick {
+  width: 94px;
+  height: 94px;
+  background: url(elements.svg) var(--face-button-color);
+  background-position: -94px -170px;
+  mask-position: 0 -170px;
+}
+.controller.ds4 .stick.pressed {
+  background-color: var(--face-button-color-pressed);
+  background-position: -94px -170px;
+  mask-position: 0 -170px;
+}
+.controller.ds4 .bumpers {
+  width: 550px;
+  height: 54px;
+  left: 100px;
+  top: 135px;
+}
+.controller.ds4 .bumper {
+  width: 133px;
+  height: 54px;
+  opacity: 1;
+  background: var(--face-button-color);
+  mask-position: -167px -224px;
+}
+.controller.ds4 .bumper.pressed {
+  background: var(--face-button-color-pressed);
+}
+.controller.ds4 .triggers {
+  width: 550px;
+  height: 110px;
+  top: 28px;
+  left: 100px;
+}
+.controller.ds4 .trigger {
+  display: none;
+}
+.controller.ds4 .trigger-button {
+  width: 145px;
+  height: 110px;
+  opacity: 1;
+  background: var(--face-button-color);
+  mask-position: 0 -60px;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+.controller.ds4 .trigger-button.pressed {
+  background: var(--face-button-color-pressed);
+}
+.controller.ds4 .trigger-button.left {
+  left: 0;
+}
+.controller.ds4 .trigger-button.right {
+  transform: rotateY(180deg);
+  right: 0;
+}
+.controller.ds4 .face {
+  background: none;
+}
+.controller.ds4 .face.up {
+  left: 47px;
+  top: 10px;
+  width: 58.438px;
+  height: 52.536px;
+  mask-position: -120px 0px;
+}
+.controller.ds4 .face.down {
+  left: 48px;
+  bottom: 10px;
+  width: 58.438px;
+  height: 52.536px;
+  mask-position: -60px 0px;
+}
+.controller.ds4 .face.left {
+  top: 48px;
+  left: 9px;
+  width: 52.536px;
+  height: 58.438px;
+  mask-position: 0px 0px;
+}
+.controller.ds4 .face.right {
+  top: 48px;
+  right: 9px;
+  width: 52.536px;
+  height: 58.438px;
+  mask-position: -180px 0px;
+}
+.controller.ds4 .button {
+  width: 49px;
+  height: 49px;
+  text-align: center;
+  position: absolute;
+  background: var(--face-button-color);
+  mask-position: -240px 0;
+}
+.controller.ds4 .button:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.controller.ds4 .a {
+  left: 49px;
+}
+.controller.ds4 .a:before {
+  content: "\e803";
+}
+.controller.ds4 .b {
+  top: 49px;
+}
+.controller.ds4 .b:before {
+  content: "\e802";
+}
+.controller.ds4 .x {
+  top: 49px;
+}
+.controller.ds4 .x:before {
+  content: "\e800";
+}
+.controller.ds4 .y {
+  left: 49px;
+}
+.controller.ds4 .y:before {
+  content: "\e801";
+}
+.controller.ds4 .arrows {
+  left: 201px;
+  top: 154px;
+  width: 344px;
+}
+.controller.ds4 .back, .controller.ds4 .start {
+  background: none;
+  border: none;
+  border-radius: 12px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  height: 42px;
+}
+.controller.ds4 .back:before, .controller.ds4 .start:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.controller.ds4 .back {
+  left: 0;
+  font-size: 18px;
+}
+.controller.ds4 .back:before {
+  content: "\e809";
+  padding-bottom: 2px;
+}
+.controller.ds4 .start {
+  right: 0;
+  font-size: 14px;
+}
+.controller.ds4 .start:before {
+  content: "\e80a";
+  padding-bottom: 2px;
+}
+.controller.ds4 .meta {
+  left: 355px;
+  bottom: 263px;
+}
+
+:root {
+  --controller-img: url(ps5-white.webp);
+  --face-button-text-color: #aaa;
+  --misc-button-color: #222;
+  --misc-button-color-pressed: #888;
+}
+
+/*# sourceMappingURL=ps5-white.css.map */

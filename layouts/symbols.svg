@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2026 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="ps5-square" unicode="&#xe800;" d="M125-25h750v750h-750z m-125 750c0 69 56 125 125 125h750c69 0 125-56 125-125v-750c0-69-56-125-125-125h-750c-69 0-125 56-125 125z" horiz-adv-x="1000" />
+
+<glyph glyph-name="ps5-triangle" unicode="&#xe801;" d="M160-32h798l-399 704z m450 852l500-882c22-39-6-88-51-88h-1000c-45 0-74 49-51 88l500 882c22 40 80 40 102 0z" horiz-adv-x="1118" />
+
+<glyph glyph-name="ps5-circle" unicode="&#xe802;" d="M500-150c-276 0-500 224-500 500 0 276 224 500 500 500 276 0 500-224 500-500 0-276-224-500-500-500z m0 111c215 0 389 174 389 389 0 215-174 389-389 389-215 0-389-174-389-389 0-215 174-389 389-389z" horiz-adv-x="1000" />
+
+<glyph glyph-name="ps5-cross" unicode="&#xe803;" d="M65 850c-17 0-33-6-46-19-25-25-25-66 0-92l389-389-389-390c-25-25-25-66 0-91 25-25 66-25 92 0l389 389 389-389c26-25 67-25 92 0 25 25 25 66 0 91l-389 390 389 389c25 26 25 67 0 92-25 25-66 25-92 0l-389-389-389 389c-13 13-30 19-46 19z" horiz-adv-x="1000" />
+
+<glyph glyph-name="down-dir" unicode="&#xe804;" d="M571 457q0-14-10-25l-250-250q-11-11-25-11t-25 11l-250 250q-11 11-11 25t11 25 25 11h500q14 0 25-11t10-25z" horiz-adv-x="571.4" />
+
+<glyph glyph-name="up-dir" unicode="&#xe805;" d="M571 171q0-14-10-25t-25-10h-500q-15 0-25 10t-11 25 11 26l250 250q10 10 25 10t25-10l250-250q10-11 10-26z" horiz-adv-x="571.4" />
+
+<glyph glyph-name="left-dir" unicode="&#xe806;" d="M357 600v-500q0-14-10-25t-26-11-25 11l-250 250q-10 11-10 25t10 25l250 250q11 11 25 11t26-11 10-25z" horiz-adv-x="357.1" />
+
+<glyph glyph-name="right-dir" unicode="&#xe807;" d="M321 350q0-14-10-25l-250-250q-11-11-25-11t-25 11-11 25v500q0 15 11 25t25 11 25-11l250-250q10-10 10-25z" horiz-adv-x="357.1" />
+
+<glyph glyph-name="create" unicode="&#xe809;" d="M557 575l-109-5 16-359 109 5z m252-126l-149-243 93-57 149 243z m-625-27l-86-68 178-227 86 67z" horiz-adv-x="1000" />
+
+<glyph glyph-name="options" unicode="&#xe80a;" d="M98 599v-66h804v66z m0-216v-66h804v66z m0-216v-66h804v66z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

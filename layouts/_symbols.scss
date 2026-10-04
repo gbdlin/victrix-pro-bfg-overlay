@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'ds5-symbols';
+  src: url('symbols.eot?39367925#iefix') format('embedded-opentype'),
+       url('symbols.woff2?39367925') format('woff2'),
+       url('symbols.woff?39367925') format('woff'),
+       url('symbols.ttf?39367925') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "ds5-symbols";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-ps5-square:before { content: '\e800'; } /* '' */
+.icon-ps5-triangle:before { content: '\e801'; } /* '' */
+.icon-ps5-circle:before { content: '\e802'; } /* '' */
+.icon-ps5-cross:before { content: '\e803'; } /* '' */
+.icon-down-dir:before { content: '\e804'; } /* '' */
+.icon-up-dir:before { content: '\e805'; } /* '' */
+.icon-left-dir:before { content: '\e806'; } /* '' */
+.icon-right-dir:before { content: '\e807'; } /* '' */
+.icon-create:before { content: '\e809'; } /* '' */
+.icon-options:before { content: '\e80a'; } /* '' */
